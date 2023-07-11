@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+    * {
+        font-family: 'Inter', sans-serif;
+    }
+
+    .underline-animation {
+        position: relative;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .underline-animation::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -2px;
+        height: 2px;
+        background-color: #fac213;
+        transform: scaleX(0);
+        transform-origin: left center;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .underline-animation:hover::before {
+        transform: scaleX(1);
+    }
+
+    .truncate-custom {
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 200px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <nav class="w-screen fixed bg-black sm:h-16 h-14 flex justify-center items-center">
+            <ul class="flex sm:justify-center items-center justify-between gap-24 px-5 w-full">
+                <li class="hidden sm:block"> <a href=""
+                        class="text-white font-semibold text-sm opacity-90 tracking-wider underline-animation">
+                        Beranda</a>
+                </li>
+                <li class="hidden sm:block"> <a href=""
+                        class="text-white font-semibold text-sm opacity-90 tracking-wider underline-animation"> Tentang
+                        Kami</a></li>
+                <li class="hidden sm:block"> <a href=""
+                        class="text-white font-semibold text-sm opacity-90 tracking-wider underline-animation">
+                        Pelayanan</a>
+                </li>
+                <li class="block sm:hidden">
+                    <img src="assets/img/menu.png" alt="" class="w-4">
+
+                </li>
+                <li class="">
+                    <img src="assets/img/logo.png" alt="" class="w-20 sm:w-24">
+                </li>
+                <li class="block sm:hidden"></li>
+                <li class="hidden sm:block"> <a href=""
+                        class="text-white font-semibold text-sm opacity-90 tracking-wider underline-animation">
+                        Lokasi</a>
+                </li>
+                <li class="hidden sm:block"> <a href=""
+                        class="text-white font-semibold text-sm opacity-90 tracking-wider underline-animation"> Formulir
+                        Online</a></li>
+                <li class="hidden sm:block"> <a href=""
+                        class="text-white font-semibold text-sm opacity-90 tracking-wider underline-animation">
+                        Beranda</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <div class="w-screen bg-black h-30 mb-10 pt-10">p</div>
+        <div
+            class="sm:w-full bg-black sm:h-[520px] h-[190px] sm:mx-20 mx-6 rounded-2xl flex justify-center align-center sm:py-5 py-4 sm:px-8 px-3">
+            <div class="w-2/3 h-12 absolute bg-black top-20 rounded-2xl flex items-center justify-center">
+                <ul class="flex justify-between w-full mx-14">
+                    <li class="text-white truncate-custom font-bold sm:text-[18px] text-[10px]">Welcome Home</li>
+                    <li class="text-white sm:text-[18px] text-[10px]">|</li>
+                    <li class="text-white truncate-custom font-bold sm:text-[18px] text-[10px]">Senin, 09 Juli 2023</li>
+                    <li class="text-white sm:text-[18px] text-[10px]">|</li>
+                    <li class="text-white truncate-custom font-bold sm:text-[18px] text-[10px]">GLB Lewi</li>
+                    <li class="text-white sm:text-[18px] text-[10px]">|</li>
+                    <li class="text-white truncate-custom font-bold sm:text-[18px] text-[10px]"><a
+                            href="">http://linkstreaming</a></li>
+                </ul>
+            </div>
+
+            <div class="w-full bg-white sm:h-[480px] h-[160px] sm:rounded-2xl rounded-md relative">
+                <img src="assets/img/slider.jpg" class="object-cover w-full h-full sm:rounded-2xl rounded-md" alt="">
+                <div class="absolute inset-0 bg-black opacity-20"></div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
