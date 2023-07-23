@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+    * {
+        font-family: 'Inter', sans-serif;
+    }
+
+    .underline-animation {
+        position: relative;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .underline-animation::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -2px;
+        height: 2px;
+        background-color: #fac213;
+        transform: scaleX(0);
+        transform-origin: left center;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .underline-animation:hover::before {
+        transform: scaleX(1);
+    }
+
+    .truncate-custom {
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 200px;
+    }
+</style>
+
+<body>
+    <div class="">
+        <nav class="w-screen fixed bg-black sm:h-16 h-14 flex justify-center items-center z-50">
+            <ul class="flex sm:justify-center items-center justify-between gap-24 px-5 w-full">
+                <li class="hidden sm:block"> <a href=""
+                        class="text-white font-semibold text-sm opacity-90 tracking-wider underline-animation">
+                        Beranda</a>
+                </li>
+                <li class="hidden sm:block"> <a href=""
+                        class="text-white font-semibold text-sm opacity-90 tracking-wider underline-animation"> Tentang
+                        Kami</a></li>
+                <li class="hidden sm:block"> <a href=""
+                        class="text-white font-semibold text-sm opacity-90 tracking-wider underline-animation">
+                        Pelayanan</a>
+                </li>
+                <li class="block sm:hidden">
+                    <img src="assets/menu.png" alt="" class="w-4">
+
+                </li>
+                <li class="">
+                    <img src="assets/logo.png" alt="" class="w-20 sm:w-24">
+                </li>
+                <li class="block sm:hidden"></li>
+                <li class="hidden sm:block"> <a href=""
+                        class="text-white font-semibold text-sm opacity-90 tracking-wider underline-animation">
+                        Lokasi</a>
+                </li>
+                <li class="hidden sm:block"> <a href=""
+                        class="text-white font-semibold text-sm opacity-90 tracking-wider underline-animation"> Formulir
+                        Online</a></li>
+                <li class="hidden sm:block"> <a href=""
+                        class="text-white font-semibold text-sm opacity-90 tracking-wider underline-animation">
+                        Beranda</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <div class=" bg-black h-30 mb-10 pt-10">p</div>
+        <div
+            class=" bg-black sm:h-[520px] h-[190px] sm:mx-20 mx-6 sm:rounded-2xl rounded-md flex justify-center align-center sm:py-5 py-4 sm:px-8 px-3">
+            <div class="w-2/3 sm:h-12 h-10 absolute bg-black top-20 rounded-2xl flex items-center justify-center">
+                <ul class="flex justify-between w-full sm:mx-14 mx-5">
+                    <li class="text-white truncate-custom font-bold sm:text-[18px] text-[10px] ">Welcome Home</li>
+                    <li class="text-white sm:text-[18px] text-[10px] ">|</li>
+                    <li class="text-white truncate-custom font-bold sm:text-[18px] text-[10px] sm:block hidden">Senin,
+                        09 Juli 2023</li>
+                    <li class="text-white sm:text-[18px] text-[10px] sm:block hidden">|</li>
+                    <li class="text-white truncate-custom font-bold sm:text-[18px] text-[10px] sm:block hidden">GLB Lewi
+                    </li>
+                    <li class="text-white sm:text-[18px] text-[10px] sm:block hidden">|</li>
+                    <li class="text-white truncate-custom font-bold sm:text-[18px] text-[10px] "><a
+                            href="">http://linkstreaming</a></li>
+                </ul>
+            </div>
+
+            <div class="w-full bg-white sm:h-[480px] h-[160px] sm:rounded-2xl rounded-md relative">
+                <img src="assets/img/slider.jpg" class="object-cover w-full h-full sm:rounded-2xl rounded-md" alt="">
+                <div class="absolute inset-0 bg-black opacity-20"></div>
+            </div>
+
+        </div>
+        <div class="flex justify-between sm:px-20 px-5 mt-6">
+            <div class="w-[400px] sm:h-64 bg-white border-2 shadow-xl border-yellow-400 rounded-xl py-5 px-5">
+                <div class="flex items-center gap-3 sm:mb-3 mb-1">
+                    <img class="sm:w-7 w-3" src="assets/info.png" alt="">
+                    <p class="sm:text-sm text-[10px] font-semibold">Tentang kami</p>
+                </div>
+                <p class="sm:text-sm text-[7px]">GBI Lewi berdiri dari tahun 2011, dimulai dengan COOL Legenda Wisata dan Kota Wisata.
+                    Hingga sekarang GBI telah memiliki beberapa cabang & ranting yang tersebar di Cibubur, Jawa Barat,
+                    Jawa tengah, Kalimantan Utara hingga Sumba. GBI Lewi adalah Gereja yang bergerak dalam hal karunia
+                    Healing & Blessing. Dan fokus bertumbuh dan membangun Bersama didalam COOL yang menjadi dasar
+                    kegerakan GBI Lewi.
+                </p>
+            </div>
+            <div class="w-[400px] h-64 bg-white border-2 shadow-xl border-yellow-400 rounded-xl py-5 px-5 hidden sm:block">
+                <div class="flex items-center gap-3 mb-3">
+                    <img class="w-7" src="assets/info.png" alt="">
+                    <p class="text-md font-semibold">Visi</p>
+                </div>
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa fugit quidem, et fugiat
+                    blanditiis itaque similique consequuntur iusto deserunt saepe voluptatibus placeat illum nisi, quis
+                    libero molestiae voluptate aliquid exercitationem.
+                    Aut deserunt, saepe quidem porro, asperiores officia id placeat voluptatibus eligendi blanditiis
+                    unde! Accusantium esse
+
+                </p>
+            </div>
+            <div class="w-[400px] h-64 bg-white border-2 shadow-xl border-yellow-400 rounded-xl py-5 px-5 hidden sm:block">
+                <div class="flex items-center gap-3 mb-3">
+                    <img class="w-7" src="assets/info.png" alt="">
+                    <p class="text-md font-semibold">Misi</p>
+                </div>
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa fugit quidem, et fugiat
+                    blanditiis itaque similique consequuntur iusto deserunt saepe voluptatibus placeat illum nisi, quis
+                    libero molestiae voluptate aliquid exercitationem.
+                    Aut deserunt, saepe quidem porro, asperiores officia id placeat voluptatibus eligendi blanditiis
+                    unde! Accusantium esse
+
+                </p>
+            </div>
+        </div>
+        <!-- <p class="text-2xl font-bold">Profil Gembala</p> -->
+    </div>
+    </div>
+
+</body>
+
+</html>
