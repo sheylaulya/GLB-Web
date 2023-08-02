@@ -81,10 +81,15 @@
         text-decoration: none;
         cursor: pointer;
     }
+
+    .image-fit {
+        background-size: cover;
+        background-position: center;
+    }
 </style>
 
 <body>
-    <div class="">
+    <div class="mb-4">
         <nav class="w-screen fixed bg-black sm:h-16 h-14 flex justify-center items-center z-50">
             <ul class="flex sm:justify-center items-center justify-between gap-24 px-5 w-full">
                 <li class="hidden sm:block"> <a href=""
@@ -121,56 +126,28 @@
             </ul>
         </nav>
 
-        <div class=" bg-black h-30 mb-10 pt-10"></div>
-        <div class="my-[40px] pt-3">
-            <p class="text-[30px] font-bold mx-[85px]">Lokasi - Diluar JABODETABEK</p>
-            <p class="text-[18px] font-bold mx-[85px] text-gray-600">Berikut lokasi Gereja di daerah DIluar JABODETABEK
+        <div class=" bg-black h-30 sm:mb-10 mb-0 pt-10"></div>
+        <div class="mt-[40px] sm:mb-[40px] mb-[20px] pt-3">
+            <p class="sm:text-[30px] text-[16px] font-bold sm:mx-[85px] mx-7">Lokasi - Diluar JABODETABEK</p>
+            <p class="sm:text-[18px] text-[12px] font-bold sm:mx-[85px] mx-7 text-gray-600">Berikut lokasi Gereja di daerah DIluar JABODETABEK
             </p>
         </div>
-        <div class="flex flex-wrap justify-between sm:px-20 px-5 mt-6 gap-y-5">
-            <div id="modalContainer1" class="md:w-[30%] bg-white border-2 shadow-xl rounded-xl py-5 px-10">
+        <div class="flex flex-wrap justify-between sm:px-20 px-5 sm:mt-6 gap-y-5">
+            <div id="modalContainer1" class="md:w-[30%] bg-white border-2 shadow-xl rounded-xl py-5 sm:px-10 px-5">
                 <div class="">
-                    <img class="h-[160px] w-full object-cover rounded-lg" src="assets/gbi-lewi.png" alt="">
+                    <img class="sm:h-[160px] h-[100px] w-full object-cover rounded-lg" src="assets/gbi-lewi.png" alt="">
                 </div>
-                <p class="sm:text-sm text-[10px] font-semibold my-2">GBI LEWI SEMARANG</p>
-                <div class="flex items-center gap-3 sm:mb-3 mb-1">
-                    <img class="sm:w-7 w-3" src="assets/lokasi.png" alt="">
-                    <p class="sm:text-[12px] text-gray-400 font-semibold">Jangli Tlawah II No. 37, Rt 04/ Rw 9,
+                <p class="sm:text-sm text-[12px] font-semibold sm:my-2 my-1">GBI LEWI SEMARANG</p>
+                <div class="flex items-center sm:gap-3 gap-2z  sm:mb-3 mb-2">
+                    <img class="sm:w-7 w-4" src="assets/lokasi.png" alt="">
+                    <p class="sm:text-[12px] text-[8px] text-gray-400 font-semibold">Jangli Tlawah II No. 37, Rt 04/ Rw 9,
                         Candisari, Jatingaleh, Semarang, Jateng</p>
                 </div>
                 <p class="sm:text-sm text-[10px] font-semibold">Jadwal Ibadah :
-                    <span class="sm:text-xs text-[10px] py-1 px-2 bg-[#fac213] rounded">Minggu</span>
+                    <span class="sm:text-xs text-[8px] py-1 px-2 mx-2 bg-[#fac213] rounded">Minggu</span>
                 </p>
             </div>
-            <div id="modalContainer1" class="md:w-[30%] bg-white border-2 shadow-xl rounded-xl py-5 px-10">
-                <div class="">
-                    <img class="h-[160px] w-full object-cover rounded-lg" src="assets/gbi-lewi.png" alt="">
-                </div>
-                <p class="sm:text-sm text-[10px] font-semibold my-2">GBI LEWI SEMARANG</p>
-                <div class="flex items-center gap-3 sm:mb-3 mb-1">
-                    <img class="sm:w-7 w-3" src="assets/lokasi.png" alt="">
-                    <p class="sm:text-[12px] text-gray-400 font-semibold">Jangli Tlawah II No. 37, Rt 04/ Rw 9,
-                        Candisari, Jatingaleh, Semarang, Jateng</p>
-                </div>
-                <p class="sm:text-sm text-[10px] font-semibold">Jadwal Ibadah :
-                    <span class="sm:text-xs text-[10px] py-1 px-2 bg-[#fac213] rounded">Minggu</span>
-                </p>
-            </div>
-            <div class="md:w-[30%] bg-white border-2 shadow-xl rounded-xl py-5 px-10">
-                <div class="">
-                    <img class="h-[160px] w-full object-cover rounded-lg" src="assets/gbi-lewi.png" alt="">
-                </div>
-                <p class="sm:text-sm text-[10px] font-semibold my-2">GBI LEWI SEMARANG</p>
-                <div class="flex items-center gap-3 sm:mb-3 mb-1">
-                    <img class="sm:w-7 w-3" src="assets/lokasi.png" alt="">
-                    <p class="sm:text-[12px] text-gray-400 font-semibold">Jangli Tlawah II No. 37, Rt 04/ Rw 9,
-                        Candisari, Jatingaleh, Semarang, Jateng</p>
-                </div>
-                <p class="sm:text-sm text-[10px] font-semibold">Jadwal Ibadah :
-                    <span class="sm:text-xs text-[10px] py-1 px-2 bg-[#fac213] rounded">Minggu</span>
-                </p>
-            </div>
-
+           
         </div>
 
         <!-- <p class="text-2xl font-bold">Profil Gembala</p> -->
@@ -178,16 +155,19 @@
     </div>
 
     <div id="myModal1" class="modal">
-        <div class="modal-content sm:px-14  sm:py-6">
+        <div class="modal-content sm:px-14 sm:py-6 py-2 sm:overflow-none overflow-y-scroll overflow-x-hidden sm:h-fit h-[400px] sm:static absolute top-52 left-10">
             <span class="close" data-modal="myModal1">&times;</span>
-            <p class="sm:text-xl text-[10px] font-semibold my-2">GBI LEWI JANGLI SEMARANG</p>
+            <p class="sm:text-xl text-[14px] font-bold my-2">GBI LEWI JANGLI SEMARANG</p>
             <div class="flex flex-wrap">
-                <img class="h-[230px] w-[30%] object-cover rounded-lg" src="assets/gbi-lewi.png" alt="">
-                <div class="mx-8 w-[60%]">
-                    <p class="sm:text-[17px] text-gray-400">Lorem ipsum dolor sit amet consectetur. Quis ut id mi a lectus placerat pharetra morbi. Velit elementum nullam egestas morbi cursus at tincidunt. Ac tortor turpis varius potenti ac imperdiet dolor sit elementum. Orci tincidunt dapibus sit vel. Lorem ipsum dolor sit amet consectetur. Quis ut id mi a lectus placerat pharetra morbi. Velit elementum nullam egestas morbi cursus at tincidunt. Ac tortor turpis varius potent</p>
-                    <div class="flex mt-5">
-                        <p class="sm:text-sm text-[10px] font-semibold">Jadwal Ibadah : </p>
-                        <p class="sm:text-sm text-[10px] font-semibold w-[200px] mx-2"> Pdt. Herlina Rabiana Pindan Budi Ismoyo</p>
+                <img class="sm:h-[230px] w-full h-32 sm:w-[30%] image-fit rounded-lg" src="assets/gbi-lewi.png" alt="">
+                <div class="sm:mx-8 mx:2 sm:w-[60%]">
+                    <p class="sm:text-[16px] text-[12px] text-[#1E1E1E] font-semibold opacity-60 my-2">Lorem ipsum dolor sit amet consectetur. Quis ut id mi a lectus placerat pharetra morbi. Velit elementum nullam egestas morbi cursus at tincidunt. Ac tortor turpis varius potenti ac imperdiet dolor sit elementum. Orci tincidunt dapibus sit vel. Lorem ipsum dolor sit amet consectetur. Quis ut id mi a lectus placerat pharetra morbi. Velit elementum nullam egestas morbi cursus at tincidunt. Ac tortor turpis varius potent</p>
+                    <div class="flex mt-5 gap-3">
+                        <p class="sm:text-sm text-[10px] font-semibold">Gembala </p>
+                        <div class="">
+                            <p class="sm:text-sm text-[10px] font-semibold w-[200px] mx-2"> Pdt. Herlina Rabiana Pindan </p>
+                            <p class="sm:text-sm text-[10px] font-semibold w-[200px] mx-2"> Budi Ismoyo</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -203,12 +183,12 @@
                 <div class="flex mt-3 justify-around">
                     <!-- <button><</button> -->
                     <div class="w-[45%] bg-white border-2 shadow-xl border-yellow-400 rounded-xl py-3 px-5">
-                        <div class="flex">
+                        <div class="sm:flex">
                             <div class="mr-8">
-                                <p class="sm:text-[13px] text-[10px] font-semibold m-1">Nama Cool</p>
-                                <p class="sm:text-[13px] text-[10px] font-semibold m-1">Gembala Cool</p>
-                                <p class="sm:text-[13px] text-[10px] font-semibold m-1">Area</p>
-                                <p class="sm:text-[13px] text-[10px] font-semibold m-1">Waktu</p>
+                                <p class="sm:text-[13px] text-[10px] font-semibold m-1 sm:block hidden">Nama Cool</p>
+                                <p class="sm:text-[13px] text-[10px] font-semibold m-1 sm:block hidden">Gembala Cool</p>
+                                <p class="sm:text-[13px] text-[10px] font-semibold m-1 sm:block hidden">Area</p>
+                                <p class="sm:text-[13px] text-[10px] font-semibold m-1 sm:block hidden">Waktu</p>
                             </div>     
                             <div>
                                 <p class="sm:text-[13px] text-[10px] font-semibold m-1">Nama Cool</p>
@@ -219,12 +199,12 @@
                         </div>
                     </div>
                     <div class="w-[45%] bg-white border-2 shadow-xl border-yellow-400 rounded-xl py-3 px-5">
-                        <div class="flex">
+                        <div class="sm:flex">
                             <div class="mr-8">
-                                <p class="sm:text-[13px] text-[10px] font-semibold m-1">Nama Cool</p>
-                                <p class="sm:text-[13px] text-[10px] font-semibold m-1">Gembala Cool</p>
-                                <p class="sm:text-[13px] text-[10px] font-semibold m-1">Area</p>
-                                <p class="sm:text-[13px] text-[10px] font-semibold m-1">Waktu</p>
+                                <p class="sm:text-[13px] text-[10px] font-semibold m-1 sm:block hidden">Nama Cool</p>
+                                <p class="sm:text-[13px] text-[10px] font-semibold m-1 sm:block hidden">Gembala Cool</p>
+                                <p class="sm:text-[13px] text-[10px] font-semibold m-1 sm:block hidden">Area</p>
+                                <p class="sm:text-[13px] text-[10px] font-semibold m-1 sm:block hidden">Waktu</p>
                             </div>     
                             <div>
                                 <p class="sm:text-[13px] text-[10px] font-semibold m-1">Nama Cool</p>
@@ -258,6 +238,11 @@
             </div>
         </div>
     </div>
+    <footer>
+        <div class="w-full bg-black sm:h-14 h-10 flex items-center sm:px-10 px-6 absolute bottom-0">
+            <p class="text-white font-semibold sm:text-[14px] text-[10px] opacity-80">© GLB Lewi | 2023</p>
+        </div>
+    </footer>
     <script>
         const modalContainers = document.querySelectorAll("[id^='modalContainer']");
         modalContainers.forEach(container => {
