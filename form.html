@@ -47,8 +47,8 @@
     }
 </style>
 
-<body>
-    <div class="">
+<body class="overflow-y-hidden">
+    <div>
         <nav class="w-screen fixed bg-black sm:h-16 h-14 flex justify-center items-center z-50">
             <ul class="flex sm:justify-center items-center justify-between gap-24 px-5 w-full">
                 <li class="hidden sm:block"> <a href=""
@@ -86,13 +86,37 @@
         </nav>
 
         <div class=" bg-black h-30 mb-10 pt-10"></div>
-        <div class="my-[40px] pt-3 mx-[85px]">
+        <div class="my-[40px] pt-3 mx-[85px] ">
             <p class="text-[30px] font-bold">Formulir Online</p>
             <p class="text-[18px] font-bold text-gray-600">Berikut lokasi Gereja di daerah DIluar JABODETABEK
             </p>
-            <div class="flex w-full gap-2 mt-4">
-                <div class="w-[49%] flex flex-col gap-3 sm:">
-                    <div class="w-full sm:h-16 bg-center bg-center bg-black bg-[url('assets/church.jpg')] rounded-xl sm:flex items-center gap-40 sm:px-0 px-5 sm:py-0 py-3">
+            <div class="flex w-full gap-2 mt-4 mb-5">
+                <div class="w-[100%] flex flex-col gap-3 sm:">
+                 <div class="flex gap-5">
+                    <div class="w-full h-24 bg-center bg-center bg-black bg-[url('assets/church.jpg')] rounded-xl sm:flex items-center gap-4 sm:px-0 px-5 sm:py-0 py-3">
+                        <div class="inline-flex items-center">
+                            <label class="relative flex cursor-pointer items-center rounded-full p-3" for="checkbox-4"
+                                data-ripple-dark="true">
+                                <input type="checkbox"
+                                    class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-white before:opacity-0 before:transition-opacity checked:border-amber-500 checked:bg-amber-500 checked:before:bg-amber-500 hover:before:opacity-10"
+                                    id="checkbox-4" defaultChecked />
+                                <div
+                                    class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20"
+                                        fill="currentColor" stroke="currentColor" stroke-width="1">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="block">
+                            <p class="text-white font-semibold sm:text-[18px] text-[7px]">Baptis</p>
+                            <p class="text-white font-semibold sm:text-[14px] text-[7px]">saya ingin melakukan baptis</p>
+                        </div>
+                    </div>
+                    <div class="w-full h-24 bg-center bg-center bg-black bg-[url('assets/church.jpg')] rounded-xl sm:flex items-center gap-4 sm:px-0 px-5 sm:py-0 py-3">
                         <div class="inline-flex items-center">
                             <label class="relative flex cursor-pointer items-center rounded-full p-3" for="checkbox-4"
                                 data-ripple-dark="true">
@@ -116,7 +140,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="w-full sm:h-16 bg-center bg-center bg-black bg-[url('assets/church.jpg')] rounded-xl sm:flex items-center gap-40 sm:px-0 px-5 sm:py-0 py-3">
+                    <div class="w-full h-24 bg-center bg-center bg-black bg-[url('assets/church.jpg')] rounded-xl sm:flex items-center gap-4 sm:px-0 px-5 sm:py-0 py-3">
                         <div class="inline-flex items-center">
                             <label class="relative flex cursor-pointer items-center rounded-full p-3" for="checkbox-4"
                                 data-ripple-dark="true">
@@ -140,7 +164,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="w-full sm:h-16 bg-center bg-center bg-black bg-[url('assets/church.jpg')] rounded-xl sm:flex items-center gap-40 sm:px-0 px-5 sm:py-0 py-3">
+                    <div class="w-full h-24 bg-center bg-center bg-black bg-[url('assets/church.jpg')] rounded-xl sm:flex items-center gap-4 sm:px-0 px-5 sm:py-0 py-3">
                         <div class="inline-flex items-center">
                             <label class="relative flex cursor-pointer items-center rounded-full p-3" for="checkbox-4"
                                 data-ripple-dark="true">
@@ -164,7 +188,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="w-full sm:h-16 bg-center bg-center bg-black bg-[url('assets/church.jpg')] rounded-xl sm:flex items-center gap-40 sm:px-0 px-5 sm:py-0 py-3">
+                 </div>
+                   <div class="flex gap-5">
+                    <div class="w-full h-24 bg-center bg-center bg-black bg-[url('assets/church.jpg')] rounded-xl sm:flex items-center gap-4 sm:px-0 px-5 sm:py-0 py-3">
                         <div class="inline-flex items-center">
                             <label class="relative flex cursor-pointer items-center rounded-full p-3" for="checkbox-4"
                                 data-ripple-dark="true">
@@ -188,7 +214,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="w-full sm:h-16 bg-center bg-center bg-black bg-[url('assets/church.jpg')] rounded-xl sm:flex items-center gap-40 sm:px-0 px-5 sm:py-0 py-3">
+                    <div class="w-full h-24 bg-center bg-center bg-black bg-[url('assets/church.jpg')] rounded-xl sm:flex items-center gap-4 sm:px-0 px-5 sm:py-0 py-3">
                         <div class="inline-flex items-center">
                             <label class="relative flex cursor-pointer items-center rounded-full p-3" for="checkbox-4"
                                 data-ripple-dark="true">
@@ -212,7 +238,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="w-full sm:h-16 bg-center bg-center bg-black bg-[url('assets/church.jpg')] rounded-xl sm:flex items-center gap-40 sm:px-0 px-5 sm:py-0 py-3">
+                    <div class="w-full h-24 bg-center bg-center bg-black bg-[url('assets/church.jpg')] rounded-xl sm:flex items-center gap-4 sm:px-0 px-5 sm:py-0 py-3">
                         <div class="inline-flex items-center">
                             <label class="relative flex cursor-pointer items-center rounded-full p-3" for="checkbox-4"
                                 data-ripple-dark="true">
@@ -236,7 +262,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="w-full sm:h-16 bg-center bg-center bg-black bg-[url('assets/church.jpg')] rounded-xl sm:flex items-center gap-40 sm:px-0 px-5 sm:py-0 py-3">
+                    <div class="w-full h-24 bg-center bg-center bg-black bg-[url('assets/church.jpg')] rounded-xl sm:flex items-center gap-4 sm:px-0 px-5 sm:py-0 py-3">
                         <div class="inline-flex items-center">
                             <label class="relative flex cursor-pointer items-center rounded-full p-3" for="checkbox-4"
                                 data-ripple-dark="true">
@@ -260,69 +286,138 @@
                             </p>
                         </div>
                     </div>
+                   </div>
                 </div>
-                <div class="w-[49%] pl-8">
-                    <div class="mb-6">
-                        <p class="text-[25px] font-bold">Formulir Online</p>
-                        <p class="text-[16px] font-bold text-gray-600">Berikut lokasi Gereja di daerah DIluar JABODETABEK            
-                    </div>
-                    <div class="flex flex-wrap gap-y-2 gap-x-2">
-                        <div class="mb-4 w-[40%]">
-                            <label class="block text-gray-500 text-sm font-semibold mb-1" for="name">
-                              Nama Lengkap
-                            </label>
-                            <input class="shadow appearance-none border border-gray-500 shadow rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-10" id="name" type="text" >
+                
+            </div>
+            <div class="overflow-y-scroll">
+                <div class=" pl-8  h-[150%]">
+                    <div class="mb-10">
+                        <div class="mb-6">
+                            <p class="text-[25px] font-bold">Formulir Online</p>
+                            <p class="text-[16px] font-bold text-gray-600">Berikut lokasi Gereja di daerah DIluar JABODETABEK            
                         </div>
-                        <div class="w-[27%]">
-                            <label class="block text-gray-500 text-sm font-semibold mb-1" for="kelamin">
-                                Jenis Kelamin
-                              </label>
-                            <div class="relative">
-                              <select class="block h-10 appearance-none w-full bg-white border border-gray-500 text-gray-700 py-2 px-4 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="kelamin">
-                                <option class="disabled hidden">Pilih</option>
-                                <option>Laki-laki</option>
-                                <option>Perempuan</option>
-                              </select>
-                              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-                              </div>
+                        <div class="flex flex-wrap gap-y-2 gap-x-2">
+                            <div class="mb-4 w-[40%]">
+                                <label class="block text-gray-500 text-sm font-semibold mb-1" for="name">
+                                  Nama Lengkap
+                                </label>
+                                <input class="shadow appearance-none border border-gray-500 shadow rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-10" id="name" type="text" >
                             </div>
-                          </div>
-                        <div class="mb-4 w-[25%]">
-                            <label class="block text-gray-500 text-sm font-semibold mb-1" for="usia">
-                                Usia
-                              </label>
-                              <input class="shadow appearance-none border border-gray-500 shadow rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-10" id="usia" type="number" >
-                          </div>
-                        <div class="mb-4 w-[35%]">
-                            <label class="block text-gray-500 text-sm font-semibold mb-1" for="nomor">
-                              No Hp
-                            </label>
-                            <input class="shadow appearance-none border border-gray-500 shadow rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-10" id="nomor" type="number" >
+                            <div class="w-[27%]">
+                                <label class="block text-gray-500 text-sm font-semibold mb-1" for="kelamin">
+                                    Jenis Kelamin
+                                  </label>
+                                <div class="relative">
+                                  <select class="block h-10 appearance-none w-full bg-white border border-gray-500 text-gray-700 py-2 px-4 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="kelamin">
+                                    <option class="disabled hidden">Pilih</option>
+                                    <option>Laki-laki</option>
+                                    <option>Perempuan</option>
+                                  </select>
+                                  <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                                  </div>
+                                </div>
+                              </div>
+                            <div class="mb-4 w-[25%]">
+                                <label class="block text-gray-500 text-sm font-semibold mb-1" for="usia">
+                                    Usia
+                                  </label>
+                                  <input class="shadow appearance-none border border-gray-500 shadow rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-10" id="usia" type="number" >
+                              </div>
+                            <div class="mb-4 w-[35%]">
+                                <label class="block text-gray-500 text-sm font-semibold mb-1" for="nomor">
+                                  No Hp
+                                </label>
+                                <input class="shadow appearance-none border border-gray-500 shadow rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-10" id="nomor" type="number" >
+                            </div>
+                            <div class="mb-4 w-[35%]">
+                                <label class="block text-gray-500 text-sm font-semibold mb-1" for="email">
+                                  email
+                                </label>
+                                <input class="shadow appearance-none border border-gray-500 shadow rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-10" id="email" type="text" >
+                            </div>
+                            <div class="mb-4 w-[22%]">
+                                <label class="block text-gray-500 text-sm font-semibold mb-1" for="negara">
+                                  Negara
+                                </label>
+                                <input class="shadow appearance-none border border-gray-500 shadow rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-10" id="negara" type="text" >
+                            </div>
                         </div>
-                        <div class="mb-4 w-[35%]">
-                            <label class="block text-gray-500 text-sm font-semibold mb-1" for="email">
-                              email
-                            </label>
-                            <input class="shadow appearance-none border border-gray-500 shadow rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-10" id="email" type="text" >
+                        <div class="my-3">
+                            <p class="text-[14px] font-[500] text-gray-400">Dengan mengirimkan form ini, saya telah membaca dan memahami formulir di atas, dan menyetujui pengumpulan, penggunaan, dan saya bersedia dihubungi oleh GLB Lewi.</p>
                         </div>
-                        <div class="mb-4 w-[22%]">
-                            <label class="block text-gray-500 text-sm font-semibold mb-1" for="negara">
-                              Negara
-                            </label>
-                            <input class="shadow appearance-none border border-gray-500 shadow rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-10" id="negara" type="text" >
+                        <div class="w-full">
+                            <button
+                            class="w-[95%] mt-3 sm:h-10 h-5 text-white sm:text-[16px] text-[8px] font-semibold bg-[#DDB05B] shadow-xl rounded-md sm:block hidden">Daftar
+                            Sekarang</button>
                         </div>
                     </div>
-                    <div class="my-3">
-                        <p class="text-[14px] font-[500] text-gray-400">Dengan mengirimkan form ini, saya telah membaca dan memahami formulir di atas, dan menyetujui pengumpulan, penggunaan, dan saya bersedia dihubungi oleh GLB Lewi.</p>
+                    <div class="mb-10">
+                        <div class="mb-6">
+                            <p class="text-[25px] font-bold">Formulir Online</p>
+                            <p class="text-[16px] font-bold text-gray-600">Berikut lokasi Gereja di daerah DIluar JABODETABEK            
+                        </div>
+                        <div class="flex flex-wrap gap-y-2 gap-x-2">
+                            <div class="mb-4 w-[40%]">
+                                <label class="block text-gray-500 text-sm font-semibold mb-1" for="name">
+                                  Nama Lengkap
+                                </label>
+                                <input class="shadow appearance-none border border-gray-500 shadow rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-10" id="name" type="text" >
+                            </div>
+                            <div class="w-[27%]">
+                                <label class="block text-gray-500 text-sm font-semibold mb-1" for="kelamin">
+                                    Jenis Kelamin
+                                  </label>
+                                <div class="relative">
+                                  <select class="block h-10 appearance-none w-full bg-white border border-gray-500 text-gray-700 py-2 px-4 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="kelamin">
+                                    <option class="disabled hidden">Pilih</option>
+                                    <option>Laki-laki</option>
+                                    <option>Perempuan</option>
+                                  </select>
+                                  <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                                  </div>
+                                </div>
+                              </div>
+                            <div class="mb-4 w-[25%]">
+                                <label class="block text-gray-500 text-sm font-semibold mb-1" for="usia">
+                                    Usia
+                                  </label>
+                                  <input class="shadow appearance-none border border-gray-500 shadow rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-10" id="usia" type="number" >
+                              </div>
+                            <div class="mb-4 w-[35%]">
+                                <label class="block text-gray-500 text-sm font-semibold mb-1" for="nomor">
+                                  No Hp
+                                </label>
+                                <input class="shadow appearance-none border border-gray-500 shadow rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-10" id="nomor" type="number" >
+                            </div>
+                            <div class="mb-4 w-[35%]">
+                                <label class="block text-gray-500 text-sm font-semibold mb-1" for="email">
+                                  email
+                                </label>
+                                <input class="shadow appearance-none border border-gray-500 shadow rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-10" id="email" type="text" >
+                            </div>
+                            <div class="mb-4 w-[22%]">
+                                <label class="block text-gray-500 text-sm font-semibold mb-1" for="negara">
+                                  Negara
+                                </label>
+                                <input class="shadow appearance-none border border-gray-500 shadow rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-10" id="negara" type="text" >
+                            </div>
+                        </div>
+                        <div class="my-3">
+                            <p class="text-[14px] font-[500] text-gray-400">Dengan mengirimkan form ini, saya telah membaca dan memahami formulir di atas, dan menyetujui pengumpulan, penggunaan, dan saya bersedia dihubungi oleh GLB Lewi.</p>
+                        </div>
+                        <div class="w-full">
+                            <button
+                            class="w-[95%] mt-3 sm:h-10 h-5 text-white sm:text-[16px] text-[8px] font-semibold bg-[#DDB05B] shadow-xl rounded-md sm:block hidden">Daftar
+                            Sekarang</button>
+                        </div>
                     </div>
-                    <div class="w-full">
-                        <button
-                        class="w-[95%] mt-3 sm:h-10 h-5 text-white sm:text-[16px] text-[8px] font-semibold bg-[#DDB05B] shadow-xl rounded-md sm:block hidden">Daftar
-                        Sekarang</button>
-                    </div>
+                    
                 </div>
             </div>
+
         </div>
 
         <!-- <p class="text-2xl font-bold">Profil Gembala</p> -->
