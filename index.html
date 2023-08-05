@@ -14,13 +14,27 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <style>
     * {
         font-family: 'Inter', sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    p {
+        color: black;
+    }
+
+    body,
+    input,
+    textarea {
+        background-color: white;
     }
 
     .underline-animation {
@@ -88,11 +102,11 @@
         background-position: center;
     }
 
-    .playfair{
+    .playfair {
         font-family: 'Playfair Display', serif;
     }
 
-    .poppins{
+    .poppins {
         font-family: 'Poppins', sans-serif;
     }
 </style>
@@ -105,25 +119,56 @@
                         class="text-white font-semibold text-sm opacity-90 tracking-wider underline-animation">
                         Beranda</a>
                 </li>
-                <li class="hidden sm:block"> <a href=""
+                <li class="hidden sm:block"> <a href="#tentang-kami"
                         class="text-white font-semibold text-sm opacity-90 tracking-wider underline-animation"> Tentang
                         Kami</a></li>
-                <li class="hidden sm:block"> <a href=""
+                <li class="hidden sm:block"> <a href="ministry.html"
                         class="text-white font-semibold text-sm opacity-90 tracking-wider underline-animation">
                         Pelayanan</a>
                 </li>
                 <li class="block sm:hidden">
-                    <img src="assets/menu.png" alt="" class="w-4">
+                    <div class="drawer">
+                        <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                        <div class="drawer-content">
+                            <!-- Page content here -->
+
+                            <label for="my-drawer" class=" drawer-button"> <img src="assets/menu.png" alt=""
+                                    class="w-4"></label>
+
+                        </div>
+                        <div class="drawer-side">
+                            <label for="my-drawer" class="drawer-overlay"></label>
+                            <ul class="menu p-4 w-80 h-full bg-black text-base-content">
+                                <!-- Sidebar content here -->
+                                <li><a>Beranda</a></li>
+                                <li><a href="#tentang-kami">tentang Kami</a></li>
+                                <li><a href="ministry.html">Pelayanan</a></li>
+                                <li><a>Lokasi</a></li>
+                                <li><a>Online</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
 
                 </li>
                 <li class="">
-                    <img src="assets/logo.png" alt="" class="w-20 sm:w-24">
+                    <img src="assets/logo.png" for="my-drawer" alt="" class="w-20 sm:w-24 drawer-button">
+
+
                 </li>
                 <li class="block sm:hidden"></li>
-                <li class="hidden sm:block"> <a href=""
-                        class="text-white font-semibold text-sm opacity-90 tracking-wider underline-animation">
-                        Lokasi</a>
+                <li class="hidden sm:block">
+                    <div class="dropdown dropdown-hover">
+                        <label tabindex="0"
+                            class="text-white font-semibold text-sm opacity-90 tracking-wider  dropdown">
+                            Lokasi</label>
+                        <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-black rounded-box w-52">
+                            <li><a>Item 1</a></li>
+                            <li><a>Item 2</a></li>
+                        </ul>
+                    </div>
                 </li>
+               
                 <li class="hidden sm:block"> <a href=""
                         class="text-white font-semibold text-sm opacity-90 tracking-wider underline-animation"> Formulir
                         Online</a></li>
@@ -135,7 +180,7 @@
             </ul>
         </nav>
 
-        <div class=" bg-black h-30 mb-10 pt-10">p</div>
+        <div class=" bg-black sm:h-22 h-14 sm:mb-14 mb-12 pt-10"></div>
         <div
             class=" bg-black sm:h-[520px] h-[190px] sm:mx-20 mx-6 sm:rounded-2xl rounded-md flex justify-center align-center sm:py-5 py-4 sm:px-8 px-3">
             <div class="w-2/3 sm:h-12 h-10 absolute bg-black top-20 rounded-2xl flex items-center justify-center">
@@ -153,14 +198,35 @@
                 </ul>
             </div>
 
-            <div class="w-full bg-white sm:h-[480px] h-[160px] sm:rounded-2xl rounded-md relative">
-                <img src="assets/img/slider.jpg" class="object-cover w-full h-full sm:rounded-2xl rounded-md" alt="">
-                <div class="absolute inset-0 bg-black opacity-20"></div>
+            <div class="w-full bg-white sm:h-[480px] h-[160px] sm:rounded-2xl rounded-md relative carousel">
+                <div
+                    class="swiper-container carousel-item w-full h-full relative sm:rounded-2xl rounded-md overflow-hidden">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide carousel-item" id="item1">
+                            <img src="https://th.bing.com/th/id/R.a9b818f385f140ac197cc93194809a00?rik=EZv8bemiGyUIrA&riu=http%3a%2f%2fwww.thedestinationseeker.com%2fwp-content%2fuploads%2f2018%2f05%2fCinderellas-Castle-from-Pixabay.jpg&ehk=peByriaItzdXSrjTvPOMXCyTIs7xWLoRjAGG5GqfcAQ%3d&risl=&pid=ImgRaw&r=0"
+                                class="w-full sm:h-[100vh] h-[40vh] image-fit" />
+                        </div>
+                        <div class="swiper-slide carousel-item" id="item2">
+                            <img src="https://th.bing.com/th/id/R.a9b818f385f140ac197cc93194809a00?rik=EZv8bemiGyUIrA&riu=http%3a%2f%2fwww.thedestinationseeker.com%2fwp-content%2fuploads%2f2018%2f05%2fCinderellas-Castle-from-Pixabay.jpg&ehk=peByriaItzdXSrjTvPOMXCyTIs7xWLoRjAGG5GqfcAQ%3d&risl=&pid=ImgRaw&r=0"
+                                class="w-full sm:h-[100vh] h-[40vh] image-fit" />
+                        </div>
+                        <div class="swiper-slide carousel-item" id="item3">
+                            <img src="https://th.bing.com/th/id/R.a9b818f385f140ac197cc93194809a00?rik=EZv8bemiGyUIrA&riu=http%3a%2f%2fwww.thedestinationseeker.com%2fwp-content%2fuploads%2f2018%2f05%2fCinderellas-Castle-from-Pixabay.jpg&ehk=peByriaItzdXSrjTvPOMXCyTIs7xWLoRjAGG5GqfcAQ%3d&risl=&pid=ImgRaw&r=0"
+                                class="w-full sm:h-[100vh] h-[40vh] image-fit" />
+                        </div>
+                        <div class="swiper-slide carousel-item" id="item4">
+                            <img src="https://allears.net/wp-content/uploads/2021/04/2021-reopening-wdw-magic-kingdom-cinderella-castle-molly-guide-5-scaled.jpg"
+                                class="w-full sm:h-[100vh] h-[40vh] image-fit" />
+                        </div>
+                    </div>
+                </div>
+                <!-- <img src="assets/img/slider.jpg" class="object-cover w-full h-full sm:rounded-2xl rounded-md" alt=""> -->
+                <!-- <div class="absolute inset-0 bg-black o pacity-20 z-10"></div> -->
             </div>
 
         </div>
         <div class="flex justify-between sm:px-20 px-5 mt-6">
-            <div
+            <div id="tentang-kami"
                 class="w-[400px] sm:h-64 bg-white border-2 shadow-xl border-yellow-400 rounded-xl sm:py-5 py-2 sm:px-5 px-4">
                 <div class="flex items-center gap-3 sm:mb-3 mb-1">
                     <img class="sm:w-7 w-3" src="assets/info.png" alt="">
@@ -237,13 +303,40 @@
                 <img class="sm:w-10 w-3" src="assets/bible.png" alt="">
                 <p class="font-bold sm:text-2xl text-[12px] text-white playfair">Bible</p>
             </div>
-            <p class="sm:mt-5 mt-1 text-center sm:text-xl text-[8px] font-semibold text-white opacity-90 playfair italic">“ For God so
-                loved the world that he gave his one and only begotten Son, that who ever believes in him shall not
-                perish but have eternal life “</p>
-            <p class="sm:mt-3 mt-1 text-center sm:text-xl text-[8px] font-semibold text-white opacity-90 playfair ">
-                -John 3:16 (KJV)
-            </p>
+            <div class="carousel ">
+                <div class="carousel-item w-full flex flex-col">
+                    <p
+                        class="sm:mt-5 mt-1 text-center sm:text-xl text-[8px] font-semibold text-white opacity-90 playfair italic">
+                        “ For God so
+                        loved the world that he gave his one and only begotten Son, that who ever believes in him shall
+                        not
+                        perish but have eternal life “</p>
+                    <p
+                        class="sm:mt-3 mt-1 text-center sm:text-xl text-[8px] font-semibold text-white opacity-90 playfair ">
+                        -John 3:16 (KJV)
+                    </p>
+                </div>
+                <div class="carousel-item w-full flex flex-col">
+                    <p
+                        class="sm:mt-5 mt-1 text-center sm:text-xl text-[8px] font-semibold text-white opacity-90 playfair italic">
+                        “ lah iya“</p>
+                    <p
+                        class="sm:mt-3 mt-1 text-center sm:text-xl text-[8px] font-semibold text-white opacity-90 playfair ">
+                        -John 3:16 (KJV)
+                    </p>
+                </div>
+                <div class="carousel-item w-full flex flex-col">
+                    <p
+                        class="sm:mt-5 mt-1 text-center sm:text-xl text-[8px] font-semibold text-white opacity-90 playfair italic">
+                        “Iya Lah“</p>
+                    <p
+                        class="sm:mt-3 mt-1 text-center sm:text-xl text-[8px] font-semibold text-white opacity-90 playfair ">
+                        -John 3:16 (KJV)
+                    </p>
+                </div>
+            </div>
         </div>
+
 
         <div
             class="w-full bg-black bg-image sm:h-[450px] h-52 sm:rounded-br-[120px] rounded-br-[50px] shadow-xl flex items-center justify-center ">
@@ -263,13 +356,15 @@
         <div class="mt-10 mb-16">
             <div class="">
                 <p class="sm:text-2xl text-xl font-extrabold text-center poppins">Hubungi Kami</p>
-                <p class="sm:text-xl text-[15px] font-bold tracking-wider text-center poppins text-[#1E1E1E]">Berikan Masukan Untuk Kami</p>
+                <p class="sm:text-xl text-[15px] font-bold tracking-wider text-center poppins text-[#1E1E1E]">Berikan
+                    Masukan Untuk Kami</p>
             </div>
             <div class="w-10/12 h-fit mx-auto mt-5 border-[#DDB05B] border-2 flex">
                 <div class="w-6/12  bg-[#DDB05B] sm:px-10 px-3 py-5 flex flex-col justify-start items-start">
                     <p class="sm:text-xl text-[12px] font-bold tracking-wider text-white">Sekretariat GBL Lewi</p>
                     <div class="flex sm:gap-5 gap-2 items-center justify-center sm:mt-5 mt-2">
-                        <div class="sm:w-32 w-24 sm:h-16 h-8 rounded-[50%] border-2 border-white ">
+                        <div class="sm:w-32 w-24 sm:h-16 h-8 rounded-[50%] border-2 border-white flex justify-center items-center">
+                          <img src="assets/pin.png" class="sm:w-8 w-4" alt="">
                         </div>
                         <p class="text-white font-semibold sm:text-[16px] text-[7px]">
                             JL CIBUBUR CBD RUKO NO FR03/16, RT.002/RW.006, Jatirangga, Kec. Jatisampurna, Kota Bekasi,
@@ -277,7 +372,8 @@
                         </p>
                     </div>
                     <div class="flex sm:gap-5 gap-2 items-center justify-center sm:mt-5 mt-2">
-                        <div class="sm:w-16 w-8 sm:h-16 h-8 rounded-[50%] border-2 border-white ">
+                        <div class="sm:w-16 w-8 sm:h-16 h-8 rounded-[50%] border-2 border-white flex justify-center items-center">
+                            <img src="assets/phone-call.png" class="sm:w-8 w-4" alt="">
                         </div>
                         <div class="">
                             <p class="text-white font-semibold sm:text-[16px] text-[7px]">02184343584</p>
@@ -285,8 +381,8 @@
                         </div>
                     </div>
                     <div class="flex sm:gap-5 gap-2 items-center justify-center sm:mt-5 mt-3">
-                        <div class="sm:w-16 w-8 sm:h-16 h-8 rounded-[50%] border-2 border-white ">
-
+                        <div class="sm:w-16 w-8 sm:h-16 h-8 rounded-[50%] border-2 border-white flex justify-center items-center">
+                            <img src="assets/clock.png" class="sm:w-8 w-4" alt="">
                         </div>
                         <p class="text-white font-semibold sm:text-[16px] text-[7px]">
                             08.00 - 20.00 WIB
@@ -323,7 +419,19 @@
             <p class="text-white font-semibold sm:text-[14px] text-[10px] opacity-80">© GLB Lewi | 2023</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+    <script>
+        const mySwiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+        
+
+    </script>
 </body>
 
 </html>
